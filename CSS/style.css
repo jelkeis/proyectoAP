@@ -26,8 +26,11 @@
 }
 
 .offcanvas{
-    font-size: 35px;
     max-width: 60%;
+}
+
+.nav-link{
+    font-size: 2rem;
 }
 
 .containerLinks{
