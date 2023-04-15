@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logoCel{
+    height: 70px;
+    width: 70px;
+}
+
+.navbarLg{
+    height: 7rem;
+}
+
+.offcanvas-body, .offcanvas-header{
+    background-color: #242C44;
+}
+
+.offcanvas{
+    font-size: 35px;
+    max-width: 60%;
+}
+
+.containerLinks{
+    margin-top: 170px;
+}
+
+main{
+    margin-bottom: 100px;
+}
+
+footer{
+    padding-bottom: 40px;
+    background-color: #242C44;
+}
+
+.navbar{
+    background-color: #242C44;
+}
+
+.divLinks{
+    height: 200px;
+}
+
+.linkAdoptar{
+    background-image: url(/IMG/adoptar.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.linkServicio{
+    background-image: url(/IMG/servicios.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.linkProductos{
+    background-image: url(/IMG/productos.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.linkNosotros{
+    background-image: url(/IMG/quienesSomos.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aAdoptar{
+    text-decoration: none;
+    color: red;
+}
+
+.aServicio{
+    text-decoration: none;
+    color: black;
+}
+
+.aProductos{
+    text-decoration: none;
+    color: black;
+}
+
+.aNosotros{
+    text-decoration: none;
+    color: red;
+}
