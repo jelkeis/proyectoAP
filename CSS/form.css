@@ -25,15 +25,17 @@ span{
 
 /* Cuerpo central */
 
-main{
+.cuerpoCentral{
     margin-top: 170px;
     box-shadow: 5px 5px 5px 5px gray;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+
 }
 
 /* inputs */
-.lineasInput{
-    width: 100%;
+.inputes{
+   padding-left: 25px;
+}
+
+.row{
+    margin-top: 20px;
 }
