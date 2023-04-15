@@ -1,0 +1,39 @@
+/* Inicio y otros del header */
+.btn-header{
+    background-color: inherit;
+    color: #4A90E2;
+    /* font-family: 'roboto-black', sans-serif; */
+    border: none;
+    font-size:24px;
+}
+
+/* spans */
+
+span{
+    color: red;
+}
+
+/* Estilos de inputs */
+.primerInput{
+    margin-top: 150px;
+}
+
+.label-s{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Cuerpo central */
+
+main{
+    margin-top: 170px;
+    box-shadow: 5px 5px 5px 5px gray;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+/* inputs */
+.lineasInput{
+    width: 100%;
+}
