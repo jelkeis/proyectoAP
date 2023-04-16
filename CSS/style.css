@@ -1,103 +1,108 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.logo{
-    height: 200px;
-    width: 200px;
-    object-fit: contain;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
-.logoCel{
+.logo {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 40px;
+}
+
+.logoCel {
     height: 70px;
     width: 70px;
 }
 
-.navbarLg{
+.navbarLg {
     height: 7rem;
 }
 
-.offcanvas-body, .offcanvas-header{
+.offcanvas-body,
+.offcanvas-header {
     background-color: #242C44;
 }
 
-.offcanvas{
+.offcanvas {
     max-width: 60%;
 }
 
-.nav-link{
+.nav-link {
     font-size: 2rem;
 }
 
-.containerLinks{
+.containerLinks {
     margin-top: 170px;
 }
 
-main{
+main {
     margin-bottom: 100px;
 }
 
-footer{
-    padding-bottom: 40px;
+footer {
+    height: 80px;
     background-color: #242C44;
 }
 
-.navbar{
+.navbar {
     background-color: #242C44;
 }
 
-.divLinks{
+.divLinks {
     height: 200px;
 }
 
-.linkAdoptar{
+.linkAdoptar {
     background-image: url(/IMG/adoptar.webp);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.linkServicio{
+.linkServicio {
     background-image: url(/IMG/servicios.webp);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.linkProductos{
+.linkProductos {
     background-image: url(/IMG/productos.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.linkNosotros{
+.linkNosotros {
     background-image: url(/IMG/quienesSomos.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.aAdoptar{
+.aAdoptar {
     text-decoration: none;
     color: red;
 }
 
-.aServicio{
+.aServicio {
     text-decoration: none;
     color: black;
 }
 
-.aProductos{
+.aProductos {
     text-decoration: none;
     color: black;
 }
 
-.aNosotros{
+.aNosotros {
     text-decoration: none;
     color: red;
 }
