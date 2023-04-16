@@ -10,4 +10,4 @@ const tests = async () =>{
     console.log(precios.data)
 
 
-    const preciosData = 
+    const preciosData = kmk
