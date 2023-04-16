@@ -70,40 +70,120 @@
     </nav>
 
     <!-- Main -->
-    <div
-        class="container position-relative h-100 cuerpoCentral text-center d-flex align-items-center justify-content-center">
-        <form action="">
-            <div class="row">
-                <div class="col-lg-6">
-                    <label for="input-nombre">Nombre: <span>*</span></label>
+    <main>
+        <div
+            class="container rounded position-relative h-100 cuerpoCentral text-center d-flex align-items-center justify-content-center">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-nombre">Nombre: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start">
+                        <input type="text" id="input-nombre" class="form-control" placeholder="Juan">
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <input type="text" id="input-nombre" class="form-control" placeholder="Juan">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-apellido">Apellido: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start"><input type="text" id="input-apellido" class="form-control"
+                            placeholder="Carballo"></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label for="input-apellido">Apellido: <span>*</span></label>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-email" class=>Email: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text"><input type="email" id="input-email" class="form-control"
+                            placeholder="juan@juan.com">
+                    </div>
                 </div>
-                <div class="col-lg-6"><input type="text" id="input-apellido" class="form-control" placeholder="Carballo"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label for="input-email" class=>Email: <span>*</span></label>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-telefono" class=>Telefono: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start"><input type="tel" id="input-telefono" class="form-control"
+                            placeholder="+54 123456789">
+                    </div>
                 </div>
-                <div class="col-lg-6"><input type="email" id="input-email" class="form-control" placeholder="juan@juan.com">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-provincia" class=>Provincia: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start"><input type="text" id="input-provincia" class="form-control"
+                            placeholder="Buenos Aires">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label for="input-telefono" class=>Telefono: <span>*</span></label>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-ciudad" class=>Ciudad: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start"><input type="number" id="input-ciudad" class="form-control"
+                            placeholder="Lomas de Zamora">
+                    </div>
                 </div>
-                <div class="col-lg-6"><input type="number" id="input-telefono" class="form-control" placeholder="+54 123456789">
-                </div>
-            </div>
-        </form>
-    </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-pued" class=>Puedo adoptar: <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start checkboxestyle">
+                        <input id="cachorros" type="checkbox" name="cachorros">
+                        <label for="cachorros">Cachorros</label><br>
 
+                        <input type="checkbox" name="" id="adultos">
+                        <label for="adultos">Adultos</label><br>
+
+                        <input type="checkbox" name="" id="preniada">
+                        <label for="preniada">Hembra Preñ</label><br>
+
+
+                        <input type="checkbox" name="" id="Lactantes">
+                        <label for="lactan">Lactantes</label><br>
+
+                        <input type="checkbox" name="" id="otros">
+                        <label for="otros">Otros</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="Si No" class=>¿Tienes mascotas? <span>*</span></label>
+                    </div>
+                    <div class="col-lg-6 text-start checkboxestyle">
+                        <input type="radio" name="opciones" id="tengo;">
+                        <label for="tengoM">Si</label><br>
+
+                        <input type="radio" name="opciones" id="noTengoM">
+                        <label for="noTengoM">No</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-debSaber" class=>¿Algo que debamos<br> saber de tus mascotas?:</label>
+                    </div>
+                    <div class="col-lg-6 text-start input-saber"><input type="text" id="input-debSaber" class="form-control"
+                            placeholder="Buenos Aires">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-comoHogar" class=>¿Cómo es tu hogar? <span>*</span> </label>
+                    </div>
+                    <div class="col-lg-6 text-start input-hogar"><input type="text" id="input-comoHogar" class="form-control"
+                            placeholder="Buenos Aires">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="input-dudas" class=>¿Tienes alguna duda <br> consulta o aclaración?</label>
+                    </div>
+                    <div class="col-lg-6 text-start input-dudas"><input size="20" type="text" id="input-dudas" class="form-control"
+                            placeholder="Buenos Aires">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
     <!--    Bootstrap    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

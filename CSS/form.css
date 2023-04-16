@@ -26,6 +26,7 @@ span{
 /* Cuerpo central */
 
 .cuerpoCentral{
+    /* width: 50%; */
     margin-top: 170px;
     box-shadow: 5px 5px 5px 5px gray;
 
@@ -39,3 +40,17 @@ span{
 .row{
     margin-top: 20px;
 }
+
+/* checkbox */
+.checkboxestyle{
+    padding-left: 25px;
+}
+
+
+/* Inputs anchos */
+.input-saber, .input-hogar, .input-dudas{
+
+}
+
+
+
