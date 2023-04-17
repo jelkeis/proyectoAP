@@ -1,13 +1,6 @@
-let precios = [];
-
-const consultarApiPrecios = async () =>{
-    const data = await fetch ("https://amazon-product-price-data.p.rapidapi.com/product");
-    const dataParse = await data.json();
-    return dataParse
-}
-
-const tests = async () =>{
-    console.log(precios.data)
+const apiUrl = "https://api.mercadolibre.com/sites/MLA/search?q=Alimentoperro"
 
 
-    const preciosData = kmk
+await fetch(`${apiUrl}/usuarios`)
+  .then(response => response.json())
+  .then(data => console.log(data.results))
