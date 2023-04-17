@@ -53,8 +53,8 @@
                                 <a class="nav-link" href="/Pages/petshop.html">Petshop</a>
                             </li>
                             <li class="nav-item">
-								<a class="nav-link mb-4" href="/Pages/sobreNosotros.html">Sobre<br>Nosotros</a>
-							</li>
+                                <a class="nav-link mb-4" href="/Pages/sobreNosotros.html">Sobre<br>Nosotros</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -64,36 +64,41 @@
         <nav class="navbar navbar-expand-lg d-none d-lg-flex navbarLg">
             <div class="d-flex align-items-center justify-content-center position-relative m-0 p-0 h-100 w-100">
                 <div class="col-2 text-center">
-					<a class="nav-item nav-link" href="/Pages/servicios.html">REFUGIO</a>
-				</div>
-				<div class="col-2 text-center">
-					<a class="nav-item nav-link" href="/Pages/sobreNosotros.html">SOBRE<br>NOSOTROS</a>
-				</div>
+                    <a class="nav-item nav-link" href="/Pages/servicios.html">REFUGIO</a>
+                </div>
+                <div class="col-2 text-center">
+                    <a class="nav-item nav-link" href="/Pages/sobreNosotros.html">SOBRE<br>NOSOTROS</a>
+                </div>
                 <div class="col-2 text-center">
                     <a class="nav-item nav-link" href="/index.html"><img src="/IMG/logo.png" class="p-0 logo">
                     </a>
                 </div>
                 <div class="col-2 text-center">
-					<a class="nav-item nav-link" href="/Pages/adoptar.html">ADOPTAR<br>APADRINAR</a>
-				</div>
-				<div class="col-2 text-center">
-					<a class="nav-item nav-link" href="/Pages/petshop.html">PET SHOP</a>
-				</div>
+                    <a class="nav-item nav-link" href="/Pages/adoptar.html">ADOPTAR<br>APADRINAR</a>
+                </div>
+                <div class="col-2 text-center">
+                    <a class="nav-item nav-link" href="/Pages/petshop.html">PET SHOP</a>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- Main -->
     <main>
+        
+        </div>
         <div
             class="container rounded position-relative h-100 cuerpoCentral text-center d-flex align-items-center justify-content-center">
             <form action="">
+                <div class="row mb-3">
+                    <div class="col-lg-12"><h5 class="obligacion">Los campos con <strong><span>*</span></strong> son obligatorios</h5></div>
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-nombre">Nombre: <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start">
-                        <input type="text" id="input-nombre" class="form-control" placeholder="Juan">
+                        <input type="text" id="input-nombre" class="form-control" placeholder="Nombre">
                     </div>
                 </div>
                 <div class="row">
@@ -101,7 +106,7 @@
                         <label for="input-apellido">Apellido: <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start"><input type="text" id="input-apellido" class="form-control"
-                            placeholder="Carballo"></div>
+                            placeholder="Apellido"></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
@@ -131,7 +136,7 @@
                     <div class="col-lg-6">
                         <label for="input-ciudad" class=>Ciudad: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input type="number" id="input-ciudad" class="form-control"
+                    <div class="col-lg-6 text-start"><input type="text" id="input-ciudad" class="form-control"
                             placeholder="Lomas de Zamora">
                     </div>
                 </div>
@@ -140,20 +145,20 @@
                         <label for="input-pued" class=>Puedo adoptar: <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start checkboxestyle">
-                        <input id="cachorros" type="checkbox" name="cachorros">
+                        <input class="check-adopcion" id="cachorros" type="checkbox" name="cachorros">
                         <label for="cachorros">Cachorros</label><br>
 
-                        <input type="checkbox" name="" id="adultos">
+                        <input class="check-adopcion" type="checkbox" name="" id="adultos">
                         <label for="adultos">Adultos</label><br>
 
-                        <input type="checkbox" name="" id="preniada">
-                        <label for="preniada">Hembra Preñ</label><br>
+                        <input class="check-adopcion" type="checkbox" name="" id="preniada">
+                        <label for="preniada">Hembra Preñada</label><br>
 
 
-                        <input type="checkbox" name="" id="Lactantes">
+                        <input class="check-adopcion" type="checkbox" name="" id="Lactantes">
                         <label for="lactan">Lactantes</label><br>
 
-                        <input type="checkbox" name="" id="otros">
+                        <input class="check-adopcion" type="checkbox" name="" id="otros">
                         <label for="otros">Otros</label>
                     </div>
                 </div>
@@ -162,10 +167,10 @@
                         <label for="Si No" class=>¿Tienes mascotas? <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start checkboxestyle">
-                        <input type="radio" name="opciones" id="tengo;">
+                        <input class="tengo-noTengo" type="radio" name="opciones" id="tengo;">
                         <label for="tengoM">Si</label><br>
 
-                        <input type="radio" name="opciones" id="noTengoM">
+                        <input class="tengo-noTengo" type="radio" name="opciones" id="noTengoM">
                         <label for="noTengoM">No</label>
 
                     </div>
@@ -174,31 +179,39 @@
                     <div class="col-lg-6">
                         <label for="input-debSaber" class=>¿Algo que debamos<br> saber de tus mascotas?:</label>
                     </div>
-                    <div class="col-lg-6 text-start input-saber"><input type="text" id="input-debSaber"
-                            class="form-control" placeholder="Buenos Aires">
+                    <div class="col-lg-6 text-start input-saber"><textarea id="input-debSaber"
+                            class="form-control input-largo deb-saber"
+                            placeholder="Ej: ¿se llevan bien con otros animales?"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-comoHogar" class=>¿Cómo es tu hogar? <span>*</span> </label>
                     </div>
-                    <div class="col-lg-6 text-start input-hogar"><input type="text" id="input-comoHogar"
-                            class="form-control" placeholder="Buenos Aires">
+                    <div class="col-lg-6 text-start input-hogar"><textarea id="input-comoHogar"
+                            class="form-control input-largo"
+                            placeholder="Ej: casa/depto/duplex, patio/no patio, etc"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-dudas" class=>¿Tienes alguna duda <br> consulta o aclaración?</label>
                     </div>
-                    <div class="col-lg-6 text-start input-dudas"><input size="20" type="text" id="input-dudas"
-                            class="form-control" placeholder="Buenos Aires">
+                    <div class="col-lg-6 text-start input-dudas"><textarea id="input-dudas"
+                            class="form-control input-largo" placeholder="Ej: ¿como es el proceso de adopción?"></textarea>
                     </div>
                 </div>
-                <div class="row">
-                    <button type="submit">Enviar</button>
+                <div class="row text-end">
+                    <div class="col-lg-6 d-flex justify-content-end align-items-end">
+                        <input type="button" value="Cancelar" class="form-control cancel-btn">
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="send-btn form-control" type="submit">Enviar</button>
+                    </div>
                 </div>
             </form>
         </div>
+
     </main>
 
 
@@ -221,7 +234,7 @@
                     <h5 class="user-select-none copyright">Copyright</h5>
                 </div>
                 <div class="col-4">
-                    <a href="#header" class="btn btnSubir">Subir</a>
+                    <a href="" class="btn btnSubir">Subir</a>
                 </div>
             </div>
         </div>
