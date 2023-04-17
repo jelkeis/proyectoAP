@@ -1,56 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #c7dccb;
-}
-
-html,
-body {
-    height: 100%;
-    overflow-x: hidden;
-}
-
-.logo {
-    height: 200px;
-    width: 200px;
-    position: relative;
-    top: 40px;
-}
-
-.logoCel {
-    height: 70px;
-    width: 70px;
-}
-
-.navbarLg {
-    height: 7rem;
-}
-
-.offcanvas-body,
-.offcanvas-header {
-    background-color: #242C44;
-}
-
-.offcanvas {
-    max-width: 60%;
-}
-
-.nav-link {
-    font-size: 2rem;
-}
-
-footer {
-    height: 80px;
-    background-color: #242C44;
-}
-
-.navbar {
-    background-color: #242C44;
-}
-
 .img1 {
     background-image: url(/IMG/quienesSomos1.jpg);
     background-size: cover;
@@ -70,11 +17,6 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-main {
-    margin-top: 170px;
-    margin-bottom: 100px;
 }
 
 @media (max-width: 991px) {
@@ -120,10 +62,19 @@ main {
 
     .divRow {
         height: 400px;
+        transition: .5s ease-in-out;
+    }
+
+    .divRow:hover {
+        box-shadow: 0 30px 100px rgb(19, 49, 76);
+        border-radius: 10px;
+        transition: .5s ease-in-out;
     }
 }
 
 .txtMain {
-    background-color: rgb(47, 44, 123);
-    color: #c7dccb;
+    background-color: #1E4E79;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
 }

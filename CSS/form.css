@@ -1,31 +1,31 @@
 /* Inicio y otros del header */
-.btn-header{
+.btn-header {
     background-color: inherit;
     color: #4A90E2;
     /* font-family: 'roboto-black', sans-serif; */
     border: none;
-    font-size:24px;
+    font-size: 24px;
 }
 
 /* spans */
 
-span{
+span {
     color: red;
 }
 
 /* Estilos de inputs */
-.primerInput{
+.primerInput {
     margin-top: 150px;
 }
 
-.label-s{
+.label-s {
     margin-right: 15px;
     margin-left: 15px;
 }
 
 /* Cuerpo central */
 
-.cuerpoCentral{
+.cuerpoCentral {
     /* width: 50%; */
     margin-top: 170px;
     box-shadow: 5px 5px 5px 5px gray;
@@ -33,16 +33,16 @@ span{
 }
 
 /* inputs */
-.inputes{
-   padding-left: 25px;
+.inputes {
+    padding-left: 25px;
 }
 
-.row{
+.row {
     margin-top: 20px;
 }
 
 /* checkbox */
-.checkboxestyle{
+.checkboxestyle {
     padding-left: 25px;
 }
 
@@ -51,6 +51,3 @@ span{
 /* .input-saber, .input-hogar, .input-dudas{
 
 } */
-
-
-

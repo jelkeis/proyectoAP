@@ -13,19 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--    CSS    -->
+    <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/sobreNosotros.css">
     <!--    TITLE    -->
-    <title>Sobre nosotros</title>
+    <title>Sobre Nosotros</title>
     <link rel="shortcut icon" href="/IMG/logo.png">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <!-- DISPOSITIVOS MEDIANOS Y PEQUEÑOS -->
         <nav class="navbar navbar-dark fixed-top d-block d-lg-none">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/IMG/logo.png" class="logoCel"></a>
+                <a class="navbar-brand" href="/index.html"><img src="/IMG/logo.png" class="logoCel"></a>
                 <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -43,17 +44,16 @@
                                 <a class="nav-link" href="/index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/adoptar.html">Adoptar/<br>Apadrinar</a>
+                                <a class="nav-link" href="/Pages/adoptar.html">Adoptar/<br>Apadrinar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/servicios.html">Servicios</a>
+                                <a class="nav-link" href="/Pages/servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/petshop.html">Petshop</a>
+                                <a class="nav-link" href="/Pages/petshop.html">Petshop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active mb-4" aria-current="page"
-                                    href="/sobreNosotros.html">Sobre<br>Nosotros</a>
+                                <a class="nav-link active mb-4" aria-current="page">Sobre<br>Nosotros</a>
                             </li>
                         </ul>
                     </div>
@@ -64,20 +64,20 @@
         <nav class="navbar navbar-expand-lg d-none d-lg-flex navbarLg">
             <div class="d-flex align-items-center justify-content-center position-relative m-0 p-0 h-100 w-100">
                 <div class="col-2 text-center">
-                    <a class="nav-item nav-link" href="/servicios.html">REFUGIO</a>
+                    <a class="nav-item nav-link" href="/Pages/servicios.html">REFUGIO</a>
                 </div>
                 <div class="col-2 text-center">
-                    <a class="nav-item nav-link" href="/sobreNosotros.html">SOBRE NOSOTROS</a>
+                    <a class="nav-item nav-link" href="">SOBRE<br>NOSOTROS</a>
                 </div>
                 <div class="col-2 text-center">
-                    <a class="nav-item nav-link" href="index.html"><img src="/IMG/logo.png" class="p-0 logo">
+                    <a class="nav-item nav-link" href="/index.html"><img src="/IMG/logo.png" class="p-0 logo">
                     </a>
                 </div>
                 <div class="col-2 text-center">
-                    <a class="nav-item nav-link" href="/adoptar.html">ADOPTAR<br>APADRINAR</a>
+                    <a class="nav-item nav-link" href="/Pages/adoptar.html">ADOPTAR<br>APADRINAR</a>
                 </div>
                 <div class="col-2 text-center">
-                    <a class="nav-item nav-link" href="/petshop.html">PET SHOP</a>
+                    <a class="nav-item nav-link" href="/Pages/petshop.html">PET SHOP</a>
                 </div>
             </div>
         </nav>
@@ -92,7 +92,8 @@
             <div class="row mb-5 d-flex align-items-center justify-content-center divRow">
                 <div class="col-10 col-lg-5 img1"></div>
                 <div class="col-10 col-lg-7 txt1 txtMain d-flex align-items-center justify-content-center">
-                    <p class="w-75 my-3">Blue Pets es un refugio de animales comprometidos con el bienestar y la
+                    <p class="w-75 my-3 user-select-none">Blue Pets es un refugio de animales comprometidos con el
+                        bienestar y la
                         protección
                         de los animales.
                         Aquí nos dedicamos a brindar un hogar seguro y amoroso a los animales que han sido abandonados,
@@ -105,7 +106,8 @@
             <div class="row mb-5 d-flex align-items-center justify-content-center divRow">
                 <div
                     class="col-10 col-lg-7 txt2 txtMain order-last order-lg-first d-flex align-items-center justify-content-center">
-                    <p class="w-75 my-3">Nuestro equipo de profesionales altamente capacitados trabaja incansablemente
+                    <p class="w-75 my-3 user-select-none">Nuestro equipo de profesionales altamente capacitados trabaja
+                        incansablemente
                         para
                         garantizar que
                         cada animal reciba la atención y el cuidado que merece. Desde la alimentación y el ejercicio
@@ -118,7 +120,8 @@
             <div class="row mb-5 d-flex align-items-center justify-content-center divRow">
                 <div class="col-10 col-lg-5 img3"></div>
                 <div class="col-10 col-lg-7 txt3 txtMain d-flex align-items-center justify-content-center">
-                    <p class="w-75 my-3">Si está buscando un compañero peludo para su hogar, visite nuestro refugio y
+                    <p class="w-75 my-3 user-select-none">Si está buscando un compañero peludo para su hogar, visite
+                        nuestro refugio y
                         conozca
                         a nuestros
                         residentes. Estamos seguros de que encontrará el compañero perfecto para su hogar y su familia.
@@ -135,21 +138,21 @@
         <div class="container-fluid m-0 p-0">
             <div class="row d-flex align-items-center justify-content-center text-center">
                 <div class="dropup-center dropup col-4">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <button class="btn btnContacto dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Contacto
                     </button>
-                    <ul class="dropdown-menu bg-">
-                        <li><a class="dropdown-item" href="#">Telefono: 777 777 777</a></li>
-                        <li><a class="dropdown-item" href="#">Email: hola@hola.com</a></li>
-                        <li><a class="dropdown-item" href="#">Dirección: miCasa</a></li>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="dropdown-item user-select-none">Email: bluepets@gmail.com</a></li>
+                        <li><a class="dropdown-item user-select-none">Telefono: +54 9 343 509 2038</a></li>
+                        <li><a class="dropdown-item user-select-none">Dirección: Avenida Griffindor 3100</a></li>
                     </ul>
                 </div>
                 <div class="col-4">
-                    <h5 class="user-select-none">Copyright</h5>
+                    <h5 class="user-select-none copyright">Copyright</h5>
                 </div>
                 <div class="col-4">
-                    <a href="#" class="btn btn-primary">Subir</a>
+                    <a href="#header" class="btn btnSubir">Subir</a>
                 </div>
             </div>
         </div>
@@ -162,7 +165,6 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!--    JavaScript    -->
-    <script src="/JS/script.js"></script>
 </body>
 
 </html>

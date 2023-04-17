@@ -1,6 +1,12 @@
+/* CSS GLOBAL */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #F2F4FF;
 }
 
 html,
@@ -25,9 +31,12 @@ body {
     height: 7rem;
 }
 
-.offcanvas-body,
+.offcanvas-body {
+    background-color: #1E4E79;
+}
+
 .offcanvas-header {
-    background-color: #242C44;
+    background-color: #5FA2E0;
 }
 
 .offcanvas {
@@ -35,15 +44,14 @@ body {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 30px;
+    font-weight: 700;
+    color: #E6F2FF;
 }
 
-.containerLinks {
-    margin-top: 170px;
-}
-
-main {
-    margin-bottom: 100px;
+.nav-link:hover {
+    color: #1E4E79;
+    transition: .3s ease-in-out;
 }
 
 footer {
@@ -51,9 +59,50 @@ footer {
     background-color: #242C44;
 }
 
+.btnSubir,
+.btnContacto {
+    background-color: #5FA2E0;
+    color: #242C44;
+}
+
+.btnSubir:hover {
+    background-color: #8FC5FF;
+    color: #242C44;
+}
+
+:root {
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: black;
+}
+
+.btnContacto:hover,
+.btnContacto:active {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #E6F2FF;
+}
+
+.copyright {
+    color: #E6F2FF;
+}
+
 .navbar {
     background-color: #242C44;
 }
+
+main {
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* CSS DEL RESPECTIVO HTML */
 
 .divLinks {
     height: 200px;
@@ -61,48 +110,102 @@ footer {
 
 .linkAdoptar {
     background-image: url(/IMG/adoptar.webp);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repea
 }
 
 .linkServicio {
     background-image: url(/IMG/servicios.webp);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .linkProductos {
     background-image: url(/IMG/productos.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .linkNosotros {
     background-image: url(/IMG/quienesSomos.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .aAdoptar {
     text-decoration: none;
-    color: red;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .aServicio {
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .aProductos {
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .aNosotros {
     text-decoration: none;
-    color: red;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 991px) {
+
+    .linkAdoptar,
+    .linkServicio,
+    .linkProductos,
+    .linkNosotros {
+        height: 50%;
+        width: 75%;
+    }
+
+    .rowLinks {
+        width: auto;
+        height: 500px;
+    }
+
+    .linkProductos {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .linkAdoptar,
+    .linkServicio,
+    .linkProductos,
+    .linkNosotros {
+        height: 100%;
+    }
+
+    .rowLinks {
+        height: 500px;
+    }
+}
+
+.rowCarousel {
+    margin-top: 10rem;
 }
