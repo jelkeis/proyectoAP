@@ -90,18 +90,25 @@ function validar() {
      }
 }
 
+function redireccion(){
+    window.location.href = "../index.html"
+}
+
 function enviarCuestionario(){
     validar();
     if(validacion == true){
-        alert("El formulario fue enviado con éxito, en unos segundos seras redirigido a el inicio")
+        alert("El formulario fue enviado con éxito, serás redirigido a la página de Inicio")
+        setTimeout(redireccion, 1000)
     }
 }
 
 function cancelarCuestionario(){
-    alert("¿Estas seguro de que deseas cancelar el cuestionario?")
+    alert("El cuestionario fue cancelado, serás redirigido a la página de Inicio")
+    setTimeout(redireccion, 1000)
 }
 
 
 // enviarCuestionario()
 
 $sendBtn.addEventListener("click",enviarCuestionario)
+$cancelBtn.addEventListener("click",cancelarCuestionario)
