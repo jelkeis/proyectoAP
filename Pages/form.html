@@ -85,20 +85,23 @@
 
     <!-- Main -->
     <main>
-        
+
         </div>
         <div
             class="container rounded position-relative h-100 cuerpoCentral text-center d-flex align-items-center justify-content-center">
             <form action="">
                 <div class="row mb-3">
-                    <div class="col-lg-12"><h5 class="obligacion">Los campos con <strong><span>*</span></strong> son obligatorios</h5></div>
+                    <div class="col-lg-12">
+                        <h5 class="obligacion">Los campos con <strong><span>*</span></strong> son obligatorios</h5>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-nombre">Nombre: <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start">
-                        <input type="text" id="input-nombre" class="form-control" placeholder="Nombre">
+                        <input type="text" id="input-nombre" class="form-control" placeholder="Nombre" required>
+                        <p id="p-name" style="display:none; color: red;">Ingresa tu nombre!</p>
                     </div>
                 </div>
                 <div class="row">
@@ -106,38 +109,48 @@
                         <label for="input-apellido">Apellido: <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start"><input type="text" id="input-apellido" class="form-control"
-                            placeholder="Apellido"></div>
+                            placeholder="Apellido" required>
+                        <p id="p-ape" style="display:none; color: red;">Ingresa tu Apellido!</p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-email" class=>Email: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text"><input type="email" id="input-email" class="form-control"
+                    <div class="col-lg-6 text-start"><input required type="email" id="input-email" class="form-control"
                             placeholder="juan@juan.com">
+                        <p id="p-email" style="display:none; color: red;">Ingresa tu email!</p>
+
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-telefono" class=>Telefono: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input type="tel" id="input-telefono" class="form-control"
+                    <div class="col-lg-6 text-start"><input required type="number" id="input-telefono" class="form-control"
                             placeholder="+54 123456789">
+                        <p id="p-telefono" style="display:none; color: red;">Ingresa tu telefono!</p>
+
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-provincia" class=>Provincia: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input type="text" id="input-provincia" class="form-control"
-                            placeholder="Buenos Aires">
+                    <div class="col-lg-6 text-start"><input required type="text" id="input-provincia"
+                            class="form-control" placeholder="Buenos Aires">
+                        <p id="p-provincia" style="display:none; color: red;">Ingresa tu provincia!</p>
+
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-ciudad" class=>Ciudad: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input type="text" id="input-ciudad" class="form-control"
+                    <div class="col-lg-6 text-start"><input required type="text" id="input-ciudad" class="form-control"
                             placeholder="Lomas de Zamora">
+                        <p id="p-ciudad" style="display:none; color: red;">Ingresa tu ciudad!</p>
+
                     </div>
                 </div>
                 <div class="row">
@@ -145,7 +158,7 @@
                         <label for="input-pued" class=>Puedo adoptar: <span>*</span></label>
                     </div>
                     <div class="col-lg-6 text-start checkboxestyle">
-                        <input class="check-adopcion" id="cachorros" type="checkbox" name="cachorros">
+                        <input required class="check-adopcion" id="cachorros" type="checkbox" name="cachorros">
                         <label for="cachorros">Cachorros</label><br>
 
                         <input class="check-adopcion" type="checkbox" name="" id="adultos">
@@ -160,6 +173,8 @@
 
                         <input class="check-adopcion" type="checkbox" name="" id="otros">
                         <label for="otros">Otros</label>
+                        <p id="que-adoptar" style="display:none; color: red;">Selecciona al menos uno!</p>
+
                     </div>
                 </div>
                 <div class="row">
@@ -172,6 +187,8 @@
 
                         <input class="tengo-noTengo" type="radio" name="opciones" id="noTengoM">
                         <label for="noTengoM">No</label>
+                        <p id="mascotas-sino" style="display:none; color: red;">Selecciona uno!</p>
+
 
                     </div>
                 </div>
@@ -188,9 +205,11 @@
                     <div class="col-lg-6">
                         <label for="input-comoHogar" class=>¿Cómo es tu hogar? <span>*</span> </label>
                     </div>
-                    <div class="col-lg-6 text-start input-hogar"><textarea id="input-comoHogar"
+                    <div class="col-lg-6 text-start input-hogar"><textarea required id="input-comoHogar"
                             class="form-control input-largo"
                             placeholder="Ej: casa/depto/duplex, patio/no patio, etc"></textarea>
+                        <p id="p-hogar" style="display:none; color: red;">Describe tu hogar!</p>
+
                     </div>
                 </div>
                 <div class="row">
@@ -198,15 +217,16 @@
                         <label for="input-dudas" class=>¿Tienes alguna duda <br> consulta o aclaración?</label>
                     </div>
                     <div class="col-lg-6 text-start input-dudas"><textarea id="input-dudas"
-                            class="form-control input-largo" placeholder="Ej: ¿como es el proceso de adopción?"></textarea>
+                            class="form-control input-largo"
+                            placeholder="Ej: ¿como es el proceso de adopción?"></textarea>
                     </div>
                 </div>
                 <div class="row text-end">
                     <div class="col-lg-6 d-flex justify-content-end align-items-end">
-                        <input type="button" value="Cancelar" class="form-control cancel-btn">
+                        <input id="cancel-btn" type="button" value="Cancelar" class="form-control cancel-btn">
                     </div>
                     <div class="col-lg-6">
-                        <button class="send-btn form-control" type="submit">Enviar</button>
+                        <input id="send-btn" type="button" value="Enviar" class="form-control send-btn">
                     </div>
                 </div>
             </form>
@@ -246,6 +266,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!--    JavaScript    -->
+    <script src="../App/form.js"></script>
 </body>
 
 </html>
