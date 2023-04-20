@@ -66,15 +66,21 @@
     }
 
     .divRow:hover {
-        box-shadow: 0 30px 100px rgb(19, 49, 76);
+        box-shadow: 10px 10px 25px 3px gray;
         border-radius: 10px;
         transition: .5s ease-in-out;
+        transform: scale(1.1);
+
     }
 }
 
 .txtMain {
-    background-color: #1E4E79;
-    color: #333333;
+    background-color: #242C44;
+    color: white;
     font-size: 20px;
     font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+}
+
+.txtMain:hover{
 }
