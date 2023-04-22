@@ -1,104 +1,59 @@
-/* titulo de campos obligatorios*/
-.obligacion{
-    text-decoration: underline;
-    /* margin-bottom: 15px; */
+/* Inicio y otros del header */
+.btn-header{
+    background-color: inherit;
+    color: #4A90E2;
+    /* font-family: 'roboto-black', sans-serif; */
+    border: none;
+    font-size:24px;
 }
-
-
+.form-container {
+    background: rgba(245, 241, 245, 0.83);
+    padding-bottom: 10px;
+}
 /* spans */
 
-span {
+span{
     color: red;
 }
 
 /* Estilos de inputs */
-.primerInput {
-    /* margin-top: 150px; */
+.primerInput{
+    margin-top: 150px;
 }
 
-label {
-    font-weight: bold;
-}
-
-.label-s {
+.label-s{
     margin-right: 15px;
     margin-left: 15px;
 }
 
 /* Cuerpo central */
 
-.cuerpoCentral {
+.cuerpoCentral{
     /* width: 50%; */
-    /* margin-top: 170px; */
-    box-shadow: 10px 10px 25px 14px  gray;
+    margin-top: 170px;
+    box-shadow: 5px 5px 5px 5px gray;
 
 }
 
 /* inputs */
-.inputes {
-    padding-left: 25px;
+.inputes{
+   padding-left: 25px;
 }
 
-.row {
+.row{
     margin-top: 20px;
 }
 
 /* checkbox */
-.checkboxestyle {
+.checkboxestyle{
     padding-left: 25px;
 }
 
-/* boton de envio de formulario */
 
-.send-btn {
-    margin-bottom: 20px;
-    background-color: #4A90E2;
-    font-weight: bold;
-    color: white;
-}
+/* Inputs anchos */
+/* .input-saber, .input-hogar, .input-dudas{
 
-/* boton de cancel de formulario */
-
-.cancel-btn{
-    margin-bottom: 20px;
-    font-weight: bold;
-    /* color: white; */
-    width: 50%;
-    
-}
-
-/* eliminar padding de los form control */
-.input-largo {
-    height: 250px;
-    /* width: 350px; */
-}
-
-.container {
-    width: 50rem;
-    padding: 0;
-    background-color: white;
-}
+} */
 
 
-/* estilos ventana modal */
 
-.modal-container{
-    position: fixed;
-    z-index: 99999;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal{
-    margin-top: 170px;
-    width: 40%;
-    height: 50%;
-    background-color: #fff;
-    /* display: block; */
-}
