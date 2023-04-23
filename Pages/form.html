@@ -26,7 +26,7 @@
 		<!-- DISPOSITIVOS MEDIANOS Y PEQUEÑOS -->
 		<nav class="navbar navbar-dark fixed-top d-block d-lg-none">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#"><img src="/IMG/logo.png" class="logoCel"></a>
+				<a class="navbar-brand" href="/index.html"><img src="/IMG/logo.png" class="logoCel"></a>
 				<button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas"
 					data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
 					aria-label="Toggle navigation">
@@ -84,79 +84,114 @@
 
     <!-- Main -->
     <main>
-
-        </div>
         <div
             class="container rounded position-relative h-100 cuerpoCentral text-center d-flex align-items-center justify-content-center">
-            <form action="">
+            <form action="" class="formulario" id="formulario">
                 <div class="row mb-3">
                     <div class="col-lg-12">
                         <h5 class="obligacion">Los campos con <strong><span>*</span></strong> son obligatorios</h5>
                     </div>
                 </div>
+                <!-- NOMBRE -->
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-nombre">Nombre: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start">
-                        <input type="text" id="input-nombre" class="form-control" placeholder="Nombre" required>
-                        <p id="p-name" style="display:none; color: red;"><strong>Ingresa tu nombre!</strong></p>
+                    <div class="col-lg-6 form-grupo" id="grupo-nombre">
+                        <div class="form-grupo-input">
+                            <input type="text" id="nombre" class="form-input"
+                            name="nombre" placeholder="Nombre">
+                            <i class="form-validacion-estado bi bi-x-circle-fill"></i>
+                        </div>
+                        <p class="form-input-error" >
+                            Ingresa tu nombre!
+                        </p>
                     </div>
                 </div>
+                <!-- APELLIDO -->
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-apellido">Apellido: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input type="text" id="input-apellido" class="form-control"
-                            placeholder="Apellido" required>
-                        <p id="p-ape" style="display:none; color: red;"><strong>Ingresa tu Apellido!</strong></p>
+                    <div class="col-lg-6 form-grupo" id="grupo-apellido">
+                        <div class="form-grupo-input">
+                            <input type="text" id="apellido" class="form-input" name="apellido" placeholder="Apellido">
+                            <i class="form-validacion-estado bi bi-x-circle-fill"></i>
+                        </div>
+                        <p class="form-input-error" >
+                            Ingrese su apellido.
+                        </p>
                     </div>
                 </div>
+                <!-- MAIL -->
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="input-email" class=>Email: <span>*</span></label>
+                        <label for="input-email">Email: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input required type="email" id="input-email" class="form-control"
-                            placeholder="juan@juan.com">
-                        <p id="p-email" style="display:none; color: red;"><strong>Ingresa tu email!</strong></p>
-
+                    <div class="col-lg-6 form-grupo" id="grupo-mail">
+                        <div class="form-grupo-input">
+                            <input type="email" id="email" class="form-input" name="email" placeholder="juan@juan.com">
+                        <i class="form-validacion-estado bi bi-x-circle-fill"></i>
+                        </div>
+                        <p class="form-input-error">
+                            Ingresa tu email!
+                        </p>
                     </div>
                 </div>
+                <!-- TELEFONO -->
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-telefono" class=>Telefono: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input required type="number" id="input-telefono" class="form-control"
-                            placeholder="+54 123456789">
-                        <p id="p-telefono" style="display:none; color: red;"><strong>Ingresa tu telefono!</strong></p>
-
+                    <div class="col-lg-6 form-grupo" id="grupo-telefono">
+                        <div class="form-grupo-input">
+                            <input type="number" id="telefono" class="form-input" name="telefono"
+                            placeholder="11 12345678">
+                            <i class="form-validacion-estado bi bi-x-circle-fill"></i>
+                        </div>
+                        <p class="form-input-error">
+                            Ingrese su numero sin el 0 y sin el 15.
+                        </p>
                     </div>
                 </div>
+                <!-- PROVINCIA -->
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-provincia" class=>Provincia: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input required type="text" id="input-provincia"
-                            class="form-control" placeholder="Buenos Aires">
-                        <p id="p-provincia" style="display:none; color: red;"><strong>Ingresa tu provincia!</strong></p>
+                    <div class="col-lg-6 form-grupo" id="grupo-provincia">
+                        <div class="form-grupo-input">
+                            <input required type="text" id="provincia" class="form-input" name="provincia" placeholder="Buenos Aires">
+                            <i class="form-validacion-estado bi bi-x-circle-fill"></i>
+                        </div>
+                        <p class="form-input-error">
+                            Ingresa tu provincia!
+                        </p>
 
                     </div>
                 </div>
+                <!-- CIUDAD -->
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="input-ciudad" class=>Ciudad: <span>*</span></label>
+                        <label for="input-ciudad">Ciudad: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start"><input required type="text" id="input-ciudad" class="form-control"
-                            placeholder="Lomas de Zamora">
-                        <p id="p-ciudad" style="display:none; color: red;"><strong>Ingresa tu ciudad!</strong></p>
-
+                    <div class="col-lg-6 form-grupo" id="grupo-ciudad">
+                        <div class="form-grupo-input">
+                            <input required type="text" id="ciudad" class="form-input" name="ciudad" placeholder="Lomas de Zamora">
+                            <i class="form-validacion-estado bi bi-x-circle-fill"></i>
+                        </div>
+                        <p class="form-input-error">
+                            Ingresa tu ciudad!
+                        </p>
                     </div>
                 </div>
+                <!-- PREGUNTAS USUARIO -->
+                <!-- PUEDO ADOPTAR -->
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-pued" class=>Puedo adoptar: <span>*</span></label>
                     </div>
-                    <div class="col-lg-6 text-start checkboxestyle">
+                    <div class="col-lg-6 checkboxestyle">
                         <input required class="check-adopcion" id="cachorros" type="checkbox" name="cachorros">
                         <label for="cachorros">Cachorros</label><br>
 
@@ -176,26 +211,24 @@
 
                     </div>
                 </div>
+                <!-- SI YA TIENE MASCOTAS -->
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="Si No" class=>¿Tienes mascotas? <span>*</span></label>
+                        <label for="Si No" class=>¿Tienes mascotas?</label>
                     </div>
-                    <div class="col-lg-6 text-start checkboxestyle">
+                    <div class="col-lg-6 checkboxestyle">
                         <input class="tengo-noTengo" type="radio" name="opciones" id="tengo;">
                         <label for="tengoM">Si</label><br>
 
                         <input class="tengo-noTengo" type="radio" name="opciones" id="noTengoM">
                         <label for="noTengoM">No</label>
-                        <p id="mascotas-sino" style="display:none; color: red;"><strong>Selecciona uno!</strong></p>
-
-
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="input-debSaber" class=>¿Algo que debamos<br> saber de tus mascotas?:</label>
                     </div>
-                    <div class="col-lg-6 text-start input-saber"><textarea id="input-debSaber"
+                    <div class="col-lg-6 input-saber"><textarea id="input-debSaber"
                             class="form-control input-largo deb-saber"
                             placeholder="Ej: ¿se llevan bien con otros animales?"></textarea>
                     </div>
@@ -204,7 +237,7 @@
                     <div class="col-lg-6">
                         <label for="input-comoHogar" class=>¿Cómo es tu hogar? <span>*</span> </label>
                     </div>
-                    <div class="col-lg-6 text-start input-hogar"><textarea required id="input-comoHogar"
+                    <div class="col-lg-6 input-hogar"><textarea required id="input-comoHogar"
                             class="form-control input-largo"
                             placeholder="Ej: casa/depto/duplex, patio/no patio, etc"></textarea>
                         <p id="p-hogar" style="display:none; color: red;"><strong>Describe tu hogar!</strong></p>
@@ -213,19 +246,20 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="input-dudas" class=>¿Tienes alguna duda <br> consulta o aclaración?</label>
+                        <label for="input-dudas" class="">¿Tienes alguna duda <br> consulta o aclaración?</label>
                     </div>
-                    <div class="col-lg-6 text-start input-dudas"><textarea id="input-dudas"
+                    <div class="col-lg-6 input-dudas"><textarea id="input-dudas"
                             class="form-control input-largo"
                             placeholder="Ej: ¿como es el proceso de adopción?"></textarea>
                     </div>
                 </div>
-                <div class="row text-end">
-                    <div class="col-lg-6 d-flex justify-content-end align-items-end">
-                        <input id="cancel-btn" type="button" value="Cancelar" class="form-control cancel-btn">
+                <div class="row">
+                    <div class="form-mensaje" id="form-mensaje">
+                        <p><i class="bi bi-exclamation-triangle-fill"></i></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                     </div>
-                    <div class="col-lg-6">
-                        <input id="send-btn" type="button" value="Enviar" class="form-control send-btn">
+                    <div class="form-grupo form-grupo-btn-enviar">
+                        <button type="submit" class="form-btn">Enviar</button>
+                        <p class="form-mensaje-exito" id="form-mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
                 </div>
             </form>
