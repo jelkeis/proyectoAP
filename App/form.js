@@ -18,6 +18,9 @@ const campos = {
 };
 
 // VALIDACION DEL FORMULARIO
+var tipoAnimal = document.getElementsByName('form-check-opcion')
+
+
 const validarFormulario = (e) => {
   switch (e.target.name) {
     case "nombre":
@@ -254,7 +257,7 @@ formulario.addEventListener("submit", (e) => {
     campos.apellido &&
     campos.telefono &&
     campos.provincia &&
-    campos.ciudad
+    campos.ciudad 
   ) {
     formulario.reset();
 

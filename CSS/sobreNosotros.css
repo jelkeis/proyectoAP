@@ -39,6 +39,7 @@
 
     .divRow {
         height: auto;
+        
     }
 }
 
@@ -63,6 +64,10 @@
     .divRow {
         height: 400px;
         transition: .5s ease-in-out;
+        border: #000 6px solid;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px #000;
+        background: rgb(227, 225, 225, 0.8);
     }
 
     .divRow:hover {
@@ -75,12 +80,9 @@
 }
 
 .txtMain {
-    background-color: #242C44;
-    color: white;
+    background: rgb(227, 225, 225, 0.8);
+    color: #000;
     font-size: 20px;
     font-weight: 600;
     transition: transform 0.3s ease-in-out;
-}
-
-.txtMain:hover{
 }

@@ -120,6 +120,7 @@ header {
 }
 .formsLink .buttonsLink button {
     margin-top: 20px;
+    padding: 5px 20px;
     height: auto;
     width: auto;
     font-size: 36px;

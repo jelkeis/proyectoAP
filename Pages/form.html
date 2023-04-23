@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-lg-6 form-grupo" id="grupo-telefono">
                         <div class="form-grupo-input">
-                            <input type="number" id="telefono" class="form-input" name="telefono"
+                            <input type="tel" id="telefono" class="form-input" name="telefono"
                             placeholder="11 12345678">
                             <i class="form-validacion-estado bi bi-x-circle-fill"></i>
                         </div>
@@ -186,62 +186,58 @@
                     </div>
                 </div>
                 <!-- PREGUNTAS USUARIO -->
-                <!-- PUEDO ADOPTAR -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="input-pued" class=>Puedo adoptar: <span>*</span></label>
-                    </div>
-                    <div class="col-lg-6 checkboxestyle">
-                        <input required class="check-adopcion" id="cachorros" type="checkbox" name="cachorros">
-                        <label for="cachorros">Cachorros</label><br>
-
-                        <input class="check-adopcion" type="checkbox" name="" id="adultos">
-                        <label for="adultos">Adultos</label><br>
-
-                        <input class="check-adopcion" type="checkbox" name="" id="preniada">
-                        <label for="preniada">Hembra Preñada</label><br>
-
-
-                        <input class="check-adopcion" type="checkbox" name="" id="Lactantes">
-                        <label for="lactan">Lactantes</label><br>
-
-                        <input class="check-adopcion" type="checkbox" name="" id="otros">
-                        <label for="otros">Otros</label>
-                        <p id="que-adoptar" style="display:none; color: red;"><strong>Selecciona al menos uno!</strong></p>
-
-                    </div>
-                </div>
-                <!-- SI YA TIENE MASCOTAS -->
-                <div class="row">
+                 <!-- SI YA TIENE MASCOTAS -->
+                 <div class="row">
                     <div class="col-lg-6">
                         <label for="Si No" class=>¿Tienes mascotas?</label>
                     </div>
                     <div class="col-lg-6 checkboxestyle">
-                        <input class="tengo-noTengo" type="radio" name="opciones" id="tengo;">
+                        <input class="tengo-noTengo" type="radio" name="opciones" checked>
                         <label for="tengoM">Si</label><br>
 
-                        <input class="tengo-noTengo" type="radio" name="opciones" id="noTengoM">
+                        <input class="tengo-noTengo" type="radio" name="opciones">
                         <label for="noTengoM">No</label>
                     </div>
                 </div>
+                <!-- PUEDO ADOPTAR -->
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="input-debSaber" class=>¿Algo que debamos<br> saber de tus mascotas?:</label>
+                        <label for="input-pued">¿Tienes preferencia a la hora de adoptar?</label>
                     </div>
-                    <div class="col-lg-6 input-saber"><textarea id="input-debSaber"
-                            class="form-control input-largo deb-saber"
-                            placeholder="Ej: ¿se llevan bien con otros animales?"></textarea>
+                    <div class="col-lg-6 checkboxestyle">
+                        
+                        <input class="check-adopcion" type="radio" name="form-preferencia-check" checked>
+                        <label for="otros">No tengo preferencia</label><br>
+
+                        <input class="check-adopcion" type="radio" name="form-preferencia-check">
+                        <label for="cachorros">Cachorros</label><br>
+
+                        <input class="check-adopcion" type="radio" name="form-preferencia-check">
+                        <label for="adultos">Adultos</label><br>
+
+                        <input class="check-adopcion" type="radio" name="form-preferencia-check">
+                        <label for="preniada">Hembra Preñada</label><br>
+
+                        <input class="check-adopcion" type="radio" name="form-preferencia-check">
+                        <label for="preniada">Anciano</label><br>
+
+                        <input class="check-adopcion" type="radio" name="form-preferencia-check">
+                        <label for="preniada">Discapacitados</label>
                     </div>
                 </div>
+
+                <!-- ESPACIOS ABIERTOS -->
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="input-comoHogar" class=>¿Cómo es tu hogar? <span>*</span> </label>
+                        <label for="input-pued">¿Dispone de algun espacio abierto en su hogar? (terarza, balcon, patio, etc.)</label>
                     </div>
-                    <div class="col-lg-6 input-hogar"><textarea required id="input-comoHogar"
-                            class="form-control input-largo"
-                            placeholder="Ej: casa/depto/duplex, patio/no patio, etc"></textarea>
-                        <p id="p-hogar" style="display:none; color: red;"><strong>Describe tu hogar!</strong></p>
+                    <div class="col-lg-6 checkboxestyle">
+                        
+                        <input class="espacio-disponible" type="radio" name="form-espacio-check" checked>
+                        <label for="noEspacio">No</label><br>
 
+                        <input class="espacio-disponible" type="radio" name="form-espacio-check">
+                        <label for="siEspacio">Si</label>
                     </div>
                 </div>
                 <div class="row">
@@ -269,29 +265,29 @@
 
 
     <!-- FOOTER -->
-    <footer class="text-white bottom-0 w-100 d-flex align-items-center">
-        <div class="container-fluid m-0 p-0">
-            <div class="row d-flex align-items-center justify-content-center text-center">
-                <div class="dropup-center dropup col-4">
-                    <button class="btn btnContacto dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Contacto
-                    </button>
-                    <ul class="dropdown-menu text-center">
-                        <li><a class="dropdown-item user-select-none">Email: bluepets@gmail.com</a></li>
-                        <li><a class="dropdown-item user-select-none">Telefono: +54 9 343 509 2038</a></li>
-                        <li><a class="dropdown-item user-select-none">Dirección: Avenida Griffindor 3100</a></li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <h5 class="user-select-none copyright">Copyright</h5>
-                </div>
-                <div class="col-4">
-					<a href="#header" class="btn btnSubir">☝</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+	<footer class="text-white bottom-0 w-100 d-flex align-items-center">
+		<div class="container-fluid m-0 p-0">
+			<div class="row d-flex align-items-center justify-content-center text-center">
+				<div class="dropup-center dropup col-4">
+					<button class="btn btnContacto dropdown-toggle" type="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Contacto
+					</button>
+					<ul class="dropdown-menu text-center">
+						<li><a class="dropdown-item user-select-none">Email: bluepets@gmail.com</a></li>
+						<li><a class="dropdown-item user-select-none">Telefono: +54 9 343 509 2038</a></li>
+						<li><a class="dropdown-item user-select-none">Dirección: Avenida Griffindor 3100</a></li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h5 class="user-select-none copyright">Copyright</h5>
+				</div>
+				<div class="col-4">
+					<a href="#header" class="btn btnSubir">Subir</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
     <!--    Bootstrap    -->
@@ -299,7 +295,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!--    JavaScript    -->
-    <script src="../App/form.js"></script>
+    <script src="/App/form.js"></script>
 </body>
 
 </html>
