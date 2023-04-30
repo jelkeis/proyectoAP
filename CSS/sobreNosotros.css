@@ -1,19 +1,19 @@
 .img1 {
-    background-image: url(/IMG/quienesSomos1.jpg);
+    background-image: url(../IMG/quienesSomos1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .img2 {
-    background-image: url(/IMG/quienesSomos2.jpg);
+    background-image: url(../IMG/quienesSomos2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .img3 {
-    background-image: url(/IMG/quienesSomos3.jpg);
+    background-image: url(../IMG/quienesSomos3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -119,7 +119,7 @@ body {
 }
 
 .linkAdoptar {
-    background-image: url(/IMG/adoptar.webp);
+    background-image: url(../IMG/adoptar.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repea;
@@ -142,7 +142,7 @@ body {
 }
 
 .linkServicio {
-    background-image: url(/IMG/servicios.webp);
+    background-image: url(../IMG/servicios.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ body {
 }
 
 .linkProductos {
-    background-image: url(/IMG/productos.jpg);
+    background-image: url(../IMG/productos.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body {
 }
 
 .linkNosotros {
-    background-image: url(/IMG/quienesSomos.jpg);
+    background-image: url(../IMG/quienesSomos.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
